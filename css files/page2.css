@@ -1,0 +1,72 @@
+@font-face {
+  font-family: "NetflixSans";
+  src: url("./fonts/NetflixSans-Regular.otf") format("opentype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "NetflixSans";
+  src: url("./fonts/NetflixSans-Medium.otf") format("opentype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "NetflixSans";
+  src: url("./fonts/NetflixSans-Bold.otf") format("opentype");
+  font-weight: 700;
+}
+
+* {
+  font-family: "NetflixSans", sans-serif;
+  box-sizing: border-box;
+}
+body {
+  margin: 0px;
+  padding: 10px;
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+
+
+.rom-grid {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  height: 250px;
+  margin-left: 0px;
+}
+.rom-grid img {
+  width: auto;
+
+  height: 100%;
+  aspect-ratio: 2/3;
+  object-fit: cover;
+  object-position: center;
+}
+.sub-grid {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+
+.romance-head,
+.kdrama-head,
+.series-head {
+  margin: 20px 0px 20px 0px;
+  font-weight: bolder;
+  cursor: default;
+}
+
+.dummy{
+  height: 20px;
+  width: 100%;
+}
+/*animations and pseudo classes*/
+.sub-grid:hover {
+  transform: scale(1.15);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.7);
+  cursor: pointer;
+}

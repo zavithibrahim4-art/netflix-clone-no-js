@@ -1,0 +1,206 @@
+@font-face {
+  font-family: "NetflixFont";
+  src: url("../fonts/BebasNeue-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: black;
+  color: white;
+  cursor: default;
+}
+.header {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: row;
+  height: 40px;
+  align-items: center;
+  gap: 50px;
+  position: absolute;
+  z-index: 10000;
+}
+.header-text {
+  border-bottom: 2px solid transparent;
+  transition: all 0.15s ease;
+}
+.fake-margin-top {
+  padding-top: 40px;
+}
+.netflix-logo {
+  height: 40px;
+  margin-left: 30px;
+}
+.title-card-img {
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  z-index: -1;
+}
+
+.pseudo-body {
+  margin-top: 100px;
+  margin-left: 100px;
+}
+.title {
+  font-family: NetflixFont;
+  letter-spacing: 1px;
+  font-size: 70px;
+}
+.line-below-title {
+  font-family: arial;
+  margin-bottom: 20px;
+}
+.match {
+  color: #5f976a;
+}
+.year,
+.match,
+.rating,
+.duration {
+  margin-right: 20px;
+  font-size: 20px;
+}
+
+.rating {
+  border: 2px lightgray solid;
+  border-radius: 5px;
+  padding: 3px;
+}
+.description,
+.cast-text,
+.starring {
+  font-family: Arial, Helvetica, sans-serif;
+  width: 400px;
+}
+.description {
+  margin-bottom: 20px;
+}
+.cast-text {
+  color: #cecece;
+  font-size: 30px;
+}
+.starring {
+  width: 400px;
+}
+.buttons {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+}
+.play {
+  padding: 7px 5px 7px 5px;
+  width: 80px;
+  font-weight: bolder;
+  letter-spacing: 1px;
+  color: black;
+  background-color: white;
+  border: none;
+  border-radius: 3px;
+  text-align: center;
+  transition: all 0.15s;
+}
+.more-info {
+  padding: 7px 5px 7px 5px;
+  width: 80px;
+  margin-left: 15px;
+  font-weight: bolder;
+  color: white;
+  background-color: rgba(255, 255, 255, 0.251);
+  backdrop-filter: blur(2px);
+  border: none;
+  border-radius: 3px;
+  transition: all 0.15s;
+}
+
+.more-like-this {
+  margin-top: +80px;
+  margin-bottom: -120px;
+  margin-left: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: larger;
+  font-weight: bolder;
+}
+.more {
+  margin-top: +30px;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-left: 100px;
+}
+
+.more-img {
+  margin-top: +100px;
+  width: 250px;
+  height: 150px;
+  border-radius: 8px;
+  object-fit: cover;
+  object-position: center;
+  transition: all 0.3s ease;
+}
+#cast {
+  margin-top: 50px;
+  margin-left: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: larger;
+  font-weight: bolder;
+}
+.cast {
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+  margin-top: 30px;
+  margin-left: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.cast-members {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  object-position: top;
+  flex-shrink: 0;
+  box-shadow: 0px 0px 8px 3px gray;
+  transition: all 0.3s ease;
+}
+
+.cast-container {
+  text-align: center;
+  text-wrap: nowrap;
+  font-size: -2px;
+}
+/*animations and pseudo classes*/
+.header-text:hover {
+  cursor: pointer;
+  border: 0.5px solid lightgray;
+  border-width: 0px 0px 2px 0px;
+  box-shadow: 0 8px 15px -5px rgba(128, 128, 128, 0.849);
+  transform: scale(1.2);
+}
+.play:hover {
+  color: white;
+  background-color: #e50914;
+  cursor: pointer;
+  transform: scale(1.2);
+}
+.more-info:hover {
+  background-color: rgba(255, 255, 255, 0.361);
+  backdrop-filter: blur(2px);
+  cursor: pointer;
+  transform: scale(1.2);
+}
+.more-img:hover {
+  transform: scale(1.15);
+  box-shadow: 3px 3px 10px rgb(47, 47, 47);
+}
+.cast-members:hover {
+  transform: scale(1.15);
+  box-shadow: none;
+}

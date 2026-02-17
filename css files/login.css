@@ -1,0 +1,138 @@
+@font-face {
+  font-family: "NetflixSans";
+  src: url("./fonts/NetflixSans-Regular.otf") format("opentype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "NetflixSans";
+  src: url("./fonts/NetflixSans-Medium.otf") format("opentype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "NetflixSans";
+  src: url("./fonts/NetflixSans-Bold.otf") format("opentype");
+  font-weight: 700;
+}
+
+* {
+  font-family: "NetflixSans", sans-serif;
+  box-sizing: border-box;
+  color: white;
+}
+
+body {
+  margin: 0px;
+  background-image: url("../page1/login\ bg.jpg");
+  backdrop-filter: blur(3px);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  cursor: default;
+}
+/* the pseudo-body is for the black gradient bg*/
+.pseudo-body {
+  background-color: rgba(0, 0, 0, 0.4);
+  height: 100vh;
+}
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.logo {
+  width: 150px;
+  margin-left: 147px;
+  margin-top: 18px;
+}
+.lang {
+  width: 126px;
+  height: 32px;
+  margin-left: auto;
+  margin-right: 20px;
+  border-radius: 3px;
+  border: #5e5e5e solid 0.5px;
+  backdrop-filter: blur(6px);
+  background-color: rgba(255, 255, 255, 0.2);
+  cursor: pointer;
+}
+.dd1,
+.dd2 {
+  color: black;
+}
+.sign-in {
+  margin-left: 20px;
+  margin-right: 100px;
+  height: 32px;
+  width: 75px;
+  border-radius: 3px;
+  border: #5e5e5e solid 0.5px;
+  background-color: #e50914;
+  cursor: pointer;
+}
+
+.unlimited {
+  font-weight: bolder;
+  text-align: center;
+  font-size: 50px;
+  margin-top: 100px;
+}
+.plane-text1 {
+  margin-top: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.plane-text2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.email {
+  width: 300px;
+  margin-right: 40px;
+  background-color: #0f0f0f;
+  padding: 15px;
+  height: 54px;
+  border: 0.5px #5e5e5e solid;
+  border-radius: 5px;
+}
+.get-started {
+  width: auto;
+  height: 54px;
+  font-size: 17px;
+  color: white;
+  font-weight: 600;
+  padding: 5px 10px 5px 10px;
+  background-color: #e50914;
+  border: none;
+  border-radius: 3px;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+/*animatons*/
+.get-started:hover {
+  background-color: #d10610;
+}
+.sign-in:hover {
+  background-color: #d10610;
+}
+
+/*responsiveness*/
+@media screen and (max-width: 800px) {
+  .logo {
+    margin-left: 30px;
+  }
+  .sign-in,
+  .lang {
+    margin-right: 0px;
+  }
+}
